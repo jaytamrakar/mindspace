@@ -13,12 +13,12 @@ const Section4 = () => {
                             <h1 className='font-bold text-4xl'>Download Tasking on your Device</h1>
                             <p className='max-w-md my-6 text-gray-400'>Build a clean modern app landing page design using one of the most popular CSS frameworks to date.</p>
                             <div className='flex justify-start items-center gap-4'>
-                                <a href='#'>
+                                {/* <a href='#'> */}
                                     <img src="" alt='Mind Space' className='h-12' />
-                                </a>
-                                <a href='#'>
+                                {/* </a> */}
+                                {/* <a href='#'> */}
                                     <img src="" alt='Mind Space' className='h-12' />
-                                </a>
+                                {/* </a> */}
                             </div>
                         </div>
                     </div>
