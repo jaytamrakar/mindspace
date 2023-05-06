@@ -1,7 +1,7 @@
-import logo from "../logo/logo-no-background.png";
+import logo from "../../assets/logo/logo-no-background.png";
 import React from "react";
 import { useFormik } from "formik";
-import { signUpSchema } from "../schemas";
+import { signUpSchema } from "../../schemas/index.js";
 import { Link } from "react-router-dom";
 
 const initialValues = {
@@ -11,7 +11,7 @@ const initialValues = {
   //   confirm_password: "",
 };
 
-const RegistrationForm = () => {
+const Signup = () => {
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
     useFormik({
       initialValues: initialValues,
@@ -26,13 +26,14 @@ const RegistrationForm = () => {
     <>
       <section className="bg-gray-50 dark:bg-gray-900">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-          <a
+          {/* <a
             href="#"
             className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white"
           >
             <img className="w-12 h-12 mr-2" src={logo} alt="Mind Space" />
             Mind Space
-          </a>
+          </a> */}
+          
           <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
               <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
@@ -175,7 +176,7 @@ const RegistrationForm = () => {
                     Login here
                   </a> */}
                   <Link
-                    to="/signin"
+                    to="/login"
                     className="font-medium text-violet-600 hover:underline dark:text-primary-500"
                   >
                     Login here
@@ -190,4 +191,4 @@ const RegistrationForm = () => {
   );
 };
 
-export default RegistrationForm;
+export default Signup;

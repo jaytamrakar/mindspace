@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../images/Online Doctor-amico.png'
+import img from '../../assets/images/Online Doctor-amico.png'
 
 const HeroSection = () => {
   return (

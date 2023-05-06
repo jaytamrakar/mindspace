@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../logo/logo-no-background.png";
+import logo from "../../assets/logo/logo-no-background.png";
 import { useFormik } from "formik";
 import { Link } from "react-router-dom";
 
@@ -8,7 +8,7 @@ const initialValues = {
   password: "",
 };
 
-const SignIn = () => {
+const Login = () => {
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
     useFormik({
       initialValues: initialValues,
@@ -22,13 +22,13 @@ const SignIn = () => {
     <>
       <section className="bg-gray-50 dark:bg-gray-900 ">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-          <a
+          {/* <a
             href="#"
             className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white"
           >
             <img className="w-12 h-12 mr-2" src={logo} alt="logo" />
             Welcome to Mind Space
-          </a>
+          </a> */}
           <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
               <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
@@ -99,7 +99,7 @@ const SignIn = () => {
                   >
                     Forgot password?
                   </a> */}
-                  <Link to='/forget-password' className="text-sm font-medium text-primary-600 hover:underline text-violet-900">Forgot password</Link>
+                  <Link to='/forgetpassword' className="text-sm font-medium text-primary-600 hover:underline text-violet-900">Forgot password</Link>
                 </div>
                 <button
                   type="submit"
@@ -108,13 +108,15 @@ const SignIn = () => {
                   Sign in
                 </button>
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                  Not a user?{" "}
-                  <a
-                    href="#"
-                    className="font-medium text-violet-600 hover:underline "
-                  >
-                    Don't hesitate to Sign up here
-                  </a>
+                  Not a user? Don't hesitate to
+                  <span className="ml-2">
+                    <Link
+                      to="/signup"
+                      className="font-medium text-violet-600 hover:underline "
+                    >
+                      Sign up
+                    </Link>
+                  </span>
                 </p>
               </form>
             </div>
@@ -125,4 +127,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default Login;
