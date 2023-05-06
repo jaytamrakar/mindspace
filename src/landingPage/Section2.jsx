@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../../assets/images/Psychologist-amico.png'
+import img from '../images/Psychologist-amico.png'
 
 const Section2 = () => {
     return (
