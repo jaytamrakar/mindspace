@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../../assets/logo/logo-no-background.png";
 import { useFormik } from "formik";
 import { Link } from "react-router-dom";
 

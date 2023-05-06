@@ -1,4 +1,3 @@
-import logo from "../../assets/logo/logo-no-background.png";
 import React from "react";
 import { useFormik } from "formik";
 import { signUpSchema } from "../../schemas/index.js";
@@ -21,7 +20,6 @@ const Signup = () => {
         action.resetForm();
       },
     });
-  console.log(values);
   return (
     <>
       <section className="bg-gray-50 dark:bg-gray-900">

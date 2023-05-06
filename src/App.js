@@ -13,7 +13,7 @@ import Login from './pages/Login/Login';
 import Signup from './pages/Signup/Signup';
 import ForgetPassword from './pages/ForgetPassword/ForgetPassword';
 import TermsAndConditions from './pages/TermsAndConditions/TermAndConditions';
-
+// Hello I am learing git 
 function App() {
   return (
     <>
